@@ -1,0 +1,156 @@
+:root {
+   --Red:             hsl(0, 78%, 62%);
+   --Cyan:            hsl(180, 62%, 55%);
+   --Orange:          hsl(34, 97%, 64%);
+   --Blue:            hsl(212, 86%, 64%);
+   --Very-Dark-Blue:  hsl(234, 12%, 34%);
+   --Grayish-Blue:    hsl(229, 6%, 66%);
+   --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    Font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+    min-height: 100vh;
+    padding-top: 45px;
+}
+
+main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 200;
+    color:var(--Very-Dark-Blue);
+}
+
+span {
+    display: block;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1em;
+    color: var(--Grayish-Blue);
+    max-width: calc(1050px/2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.team {
+    border-top: 5px solid var(--Red);
+}
+
+.karma {
+    border-top: 5px solid var(--Orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--Blue);
+}
+
+article {
+    margin: 15px;
+    width: 350px;
+    height: 250px;
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    padding: 15px;
+    padding-right: 40px;
+    color: var(--Grayish-Blue);
+    border-top: 5px solid var(--Cyan);
+    border-radius: 0.3em;
+    box-shadow: 0px 10px 20px var(--Grayish-Blue);
+}
+
+article > h2 {
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+article > img {
+    position:absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+@media (max-width: 375px) {
+
+    main{
+        max-width: 325px;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        width: 300px;
+        height: 200px;
+        font-size: 0.9em;
+    }
+
+    article > h2 {
+        font-size: 1.3em;
+    }
+
+    article > img {
+        width: 45px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    main{
+        max-width: 350px;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        width: 339px;
+        height: 200px;
+        font-size: 1.0em;
+    }
+
+    article > h2 {
+        font-size: 1.4em;
+    }
+
+    article > img {
+        width: 50px;
+    }
+}
